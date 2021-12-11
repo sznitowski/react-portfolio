@@ -12,7 +12,8 @@ function Contact() {
             <section className="contactsubmit">
               <h4 className="text-center">Contact</h4>
               <hr />
-              <form action="mailto:vsznitowski@gmail.com" method="post">
+              {/*  */}
+              <form name="Contact Form" netlify>
                 <div className="form-group">
                   <label>Name</label>
                   <input
