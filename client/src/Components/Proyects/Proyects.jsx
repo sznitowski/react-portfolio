@@ -38,7 +38,7 @@ export default function Proyects() {
           <Bounce>
             <div className="main-card-container">
 
-              <h2 className="title">{item.title}</h2>
+              <h2 className="card-title">{item.title}</h2>
               <div className="card-body">
 
                 <h5 className="subtitle">{item.subtitle}</h5>
@@ -46,9 +46,7 @@ export default function Proyects() {
 
                 <div className="card-video mb-3">
                   <Player
-                    src={item.video}          
-                  
-                  
+                    src={item.video}                                     
                     light="https://i.stack.imgur.com/zw9Iz.png"
                 
                   />

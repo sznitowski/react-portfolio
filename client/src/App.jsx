@@ -1,4 +1,5 @@
 import Header from './Components/Header/Header';
+//import NavbarComponent from './Components/NavbarComponent/NavbarComponent';
 import Profile from './Components/Home/Profile';
 import Skills from './Components/Skills/Skills';
 import Proyects from './Components/Proyects/Proyects';
