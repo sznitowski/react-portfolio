@@ -1,10 +1,8 @@
 import * as React from 'react';
 import Data from "./Data";
-import Stack from '@mui/material/Stack';
+//import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
-
-import { Player } from 'video-react';
 
 
 import Bounce from 'react-reveal/Bounce';
@@ -33,6 +31,8 @@ export default function Proyects() {
   return (
     <div class="card-container" id="proyects">
 
+      <h3 className="text-center">Proyects</h3>
+
       {Data.map((item) =>
         <>
           <Bounce>
@@ -44,40 +44,28 @@ export default function Proyects() {
                 <h5 className="subtitle">{item.subtitle}</h5>
                 {item.id}
 
-                <div className="card-video mb-3">
-                  <Player
-                    src={item.video}                                     
-                    light="https://i.stack.imgur.com/zw9Iz.png"
-                
-                  />
+                <div className="card-image mb-3">
+                <img src={item.image}/>
                 </div>
 
-                <Stack
-                  id='tooltip'
-                  direction="row"
-                  justifyContent="center"
-                  alignItems="center"
-                  spacing={2}
+
+                <LightTooltip
+                  className='info-container'
+                  outline variant="contained"
+                  open={open} onClose={handleClose}
+                  onOpen={handleOpen}
+                  title={item.description}
                 >
-
-                  <LightTooltip
-                    className='info-container'
-                    outline variant="contained"
-                    open={open} onClose={handleClose}
-                    onOpen={handleOpen}
-                    title={item.description}
-                  >
-                    <Button
-                      color="info"
-                    >Info
-                    </Button>
-                  </LightTooltip>
-
                   <Button
                     color="info"
-                    outline variant="contained" href={item.url} target='_blank'>Code</Button>
+                  >Info
+                  </Button>
+                </LightTooltip>
+                &nbsp;&nbsp;&nbsp;
+                <Button
+                  color="info"
+                  outline variant="contained" href={item.url} target='_blank'>Code</Button>
 
-                </Stack>
 
               </div>
             </div>

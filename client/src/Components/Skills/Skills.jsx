@@ -77,6 +77,13 @@ export default function Skills() {
 
                             <Col>
                                 <div className="skills-container">
+                                    <i className="devicon-typescript-plain colored fs-1"></i>
+                                    <p>Typescript</p>
+                                </div>
+                            </Col>
+
+                            <Col>
+                                <div className="skills-container">
                                     <i className="devicon-nodejs-plain colored fs-1"></i>
                                     <p>NodeJs</p>
                                 </div>
@@ -86,6 +93,13 @@ export default function Skills() {
                                 <div className="skills-container">
                                     <i className="devicon-express-original colored text-success fs-1"></i>
                                     <p>Express</p>
+                                </div>
+                            </Col>
+
+                            <Col>
+                                <div className="skills-container">
+                                    <i className="devicon-mongodb-plain colored fs-1"></i>
+                                    <p>Mongoose</p>
                                 </div>
                             </Col>
 
